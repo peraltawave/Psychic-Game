@@ -46,16 +46,23 @@
             guesses = 10;
     }
 
+        // This resets the gusses only - i nested this into ResetGlobalVariables too just as an experiment
+        function ResetLetters(){
+            document.getElementById('lettersGuessed').textContent = (null);
+    }
+
+
     // this function resets the computerchoice
     function ResetGlobalVariables(){
         ResetGuesses();
+        ResetLetters();
         computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
         console.log(computerChoice)
     }
 
 
 
-    document.getElementById('lettersGuessed').innerHTML = "Letter Guessed: " + userGuess;
+    document.getElementById('lettersGuessed').textContent += userGuess;
 
     // i think this is where i can append the guesses so that they all display instead of just one at a time -- but i haven't figured this out
 
