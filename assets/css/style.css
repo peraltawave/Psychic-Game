@@ -4,6 +4,7 @@ body {
 
 
 #lettersGuessed {
-    background: yellow;
+    background: white;
     padding: 2px 0;
+    color: red;
 }

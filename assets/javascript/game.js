@@ -23,7 +23,6 @@
         // increase wins count
         wins++;
 
-
         // this will reset guesses to 10 and pick a new letter
         ResetGlobalVariables();
 
@@ -42,19 +41,19 @@
         ResetGuesses();
         
     }
-        // This resets the gusses only - i nested this into ResetGlobalVariables too just as an experiment
+        // This resets the guesses only - i nested this into ResetGlobalVariables too just as an experiment
         function ResetGuesses(){
-            guesses = 10;
+        guesses = 10;
     }
 
         // This resets the guesses only - i nested this into ResetGlobalVariables too just as an experiment
         function ResetLetters(){
-            document.getElementById('lettersGuessed').textContent = ("");
+        document.getElementById('lettersGuessed').textContent = ("");
     }
 
 
-    // this function resets the computerchoice
-    function ResetGlobalVariables(){
+        // this function resets the computer choice of letter, and resets guesses and letters
+        function ResetGlobalVariables(){
         ResetGuesses();
         ResetLetters();
         computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
