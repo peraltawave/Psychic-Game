@@ -1,3 +1,9 @@
 body {
     padding-left: 20px;
 }
+
+
+#lettersGuessed {
+    background: yellow;
+    padding: 2px 0;
+}

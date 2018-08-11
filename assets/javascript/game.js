@@ -23,6 +23,7 @@
         // increase wins count
         wins++;
 
+
         // this will reset guesses to 10 and pick a new letter
         ResetGlobalVariables();
 
@@ -46,9 +47,9 @@
             guesses = 10;
     }
 
-        // This resets the gusses only - i nested this into ResetGlobalVariables too just as an experiment
+        // This resets the guesses only - i nested this into ResetGlobalVariables too just as an experiment
         function ResetLetters(){
-            document.getElementById('lettersGuessed').textContent = (null);
+            document.getElementById('lettersGuessed').textContent = ("");
     }
 
 
@@ -62,7 +63,7 @@
 
 
 
-    document.getElementById('lettersGuessed').textContent += userGuess;
+    document.getElementById('lettersGuessed').textContent += (userGuess + ", ");
 
     // i think this is where i can append the guesses so that they all display instead of just one at a time -- but i haven't figured this out
 
@@ -74,4 +75,4 @@
         
             
             
-           
+            
